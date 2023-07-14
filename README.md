@@ -1,11 +1,18 @@
 ﻿# Assignment
 # Assignment-ORU
 
-# User API Documentation
 
+
+# Backend Server Documentation
+This documentation provides an overview of the backend server code and its functionalities.
+
+### Setup and Configuration
+- The backend server is built using Express.js, a Node.js web application framework.
+- MongoDB is used as the database, and the connection URL is specified in the .env file using the DB_URL environment variable.
+- Cross-Origin Resource Sharing (CORS) is enabled to allow cross-origin requests.
+
+### API Endpoints
 This documentation provides information about the User API endpoints and their usage.
-
-
 
 ## Get All Users
 
