@@ -145,7 +145,6 @@ This documentation provides an overview of the frontend code and its functionali
 ## Home Component
 - The Home component serves as the main component that renders the user table and filter buttons.
 - It maintains a state variable filteredUsers to store the filtered user data.
-- The component displays a title ("User Table") and filter buttons below it.
 - Filter buttons trigger API calls to retrieve filtered user data based on different filter types.
 - The filtered user data is passed to the Usertable component for rendering.
 
