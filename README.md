@@ -111,7 +111,6 @@ GET /users/car-email
 
 ### Request
 GET /users/top-cities
-
 -The UserModel.aggregate() function is used with an aggregation pipeline to perform the following operations:
     - $group stage: Grouping users by city and calculating the user count and total income.
     - $project stage: Creating a projection to include city, user count, and average income.
