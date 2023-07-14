@@ -26,10 +26,10 @@ Description:This endpoint retrieves all users from the database.
 ### Request
 GET /users/income-car
 
--The UserModel.find() function is used with a query object containing the following conditions:
-     -$or: [{ car: "BMW" }, { car: "Mercedes" }] - Users who own a BMW or Mercedes.
-     -income: { $lt: "$5" } - Users with an income less than $5.
--The retrieved users are then sent as a JSON response using res.json(users).
+- The UserModel.find() function is used with a query object containing the following conditions:
+     - $or: [{ car: "BMW" }, { car: "Mercedes" }] - Users who own a BMW or Mercedes.
+     - income: { $lt: "$5" } - Users with an income less than $5.
+- The retrieved users are then sent as a JSON response using res.json(users).
 
 ### Response
 
