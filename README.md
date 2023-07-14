@@ -14,14 +14,11 @@ This documentation provides an overview of the backend server code and its funct
 ### API Endpoints
 This documentation provides information about the User API endpoints and their usage.
 
-## Get All Users
 
-### Request
-GET /users/vs
+## User Object Schema
+The User object represents a user in the application. It contains various properties that provide information about the user.
 
-
-- Returns an array of user objects with the following properties:
-
+### Properties
   - id (Number): User ID
   - first_name (String): First name of the user
   - last_name (String): Last name of the user
@@ -32,11 +29,6 @@ GET /users/vs
   - car (String): Car of the user
   - quote (String): Quote of the user
   - phone_price (String): Phone price of the user
-
-### Response
-
-- Status: 200 OK
-- Description:This endpoint retrieves all users from the database.
 
 
 ## Get Users by Income and Car
