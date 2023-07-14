@@ -12,12 +12,13 @@ This documentation provides information about the User API endpoints and their u
 ### Request
 GET /users/vs
 
-The UserModel.find() function is used to retrieve all documents from the UserModel collection in the database.
-The retrieved users are then sent as a response using res.send(users).
+- The UserModel.find() function is used to retrieve all documents from the UserModel collection in the database.
+- The retrieved users are then sent as a response using res.send(users).
 
 ###Response
-Status: 200 OK
-Description:This endpoint retrieves all users from the database.
+
+- Status: 200 OK
+- Description:This endpoint retrieves all users from the database.
 
 
 ## Get Users by Income and Car
@@ -43,10 +44,10 @@ GET /users/income-car
 GET /users/male-phone
 
 
--The UserModel.find() function is used with a query object containing the following conditions:
-    -gender: "Male" - Users with gender set to "Male".
-    -$expr: { $gt: [{ $toInt: "$phone_price" }, 10000] } - Users with a phone price greater than $10,000.
--The retrieved users are then sent as a JSON response using res.json(users).
+- The UserModel.find() function is used with a query object containing the following conditions:
+    - gender: "Male" - Users with gender set to "Male".
+    - $expr: { $gt: [{ $toInt: "$phone_price" }, 10000] } - Users with a phone price greater than $10,000.
+- The retrieved users are then sent as a JSON response using res.json(users).
 
 ### Response
 
@@ -60,11 +61,11 @@ GET /users/male-phone
 GET /users/last-name-quote-email
 
 
--The UserModel.find() function is used with a query object containing the following conditions:
-    -last_name: { $regex: /^M/i } - Users with a last name starting with 'M' (case-insensitive regex).
-    -email: { $regex: /M/i } - Users with an email containing 'M' (case-insensitive regex).
-    -$expr: { $gt: [{ $strLenCP: "$quote" }, 15] } - Users with a quote length greater than 15 characters.
--The retrieved users are then sent as a JSON response using res.json(users).
+- The UserModel.find() function is used with a query object containing the following conditions:
+    - last_name: { $regex: /^M/i } - Users with a last name starting with 'M' (case-insensitive regex).
+    - email: { $regex: /M/i } - Users with an email containing 'M' (case-insensitive regex).
+    - $expr: { $gt: [{ $strLenCP: "$quote" }, 15] } - Users with a quote length greater than 15 characters.
+- The retrieved users are then sent as a JSON response using res.json(users).
 
 ### Response
 
@@ -77,10 +78,10 @@ GET /users/last-name-quote-email
 ### Request
 GET /users/car-email
 
--The UserModel.find() function is used with a query object containing the following conditions:
-   -car: { $in: ["BMW", "Mercedes", "Audi"] } - Users who own a BMW, Mercedes, or Audi.
-   -email: { $not: /\d/ } - Users with an email that does not contain any digits.
--The retrieved users are then sent as a JSON response using res.json(users).
+- The UserModel.find() function is used with a query object containing the following conditions:
+   - car: { $in: ["BMW", "Mercedes", "Audi"] } - Users who own a BMW, Mercedes, or Audi.
+   - email: { $not: /\d/ } - Users with an email that does not contain any digits.
+- The retrieved users are then sent as a JSON response using res.json(users).
 
 ### Response
 
@@ -94,11 +95,11 @@ GET /users/car-email
 GET /users/top-cities
 
 -The UserModel.aggregate() function is used with an aggregation pipeline to perform the following operations:
-    -$group stage: Grouping users by city and calculating the user count and total income.
-    -$project stage: Creating a projection to include city, user count, and average income.
-    -$sort stage: Sorting the results by user count and average income in descending order.
-    -$limit stage: Limiting the results to the top 10 cities.
--The retrieved cities are then sent as a JSON response using res.json(cities).
+    - $group stage: Grouping users by city and calculating the user count and total income.
+    - $project stage: Creating a projection to include city, user count, and average income.
+    - $sort stage: Sorting the results by user count and average income in descending order.
+    - $limit stage: Limiting the results to the top 10 cities.
+- The retrieved cities are then sent as a JSON response using res.json(cities).
 
 ### Response
 
