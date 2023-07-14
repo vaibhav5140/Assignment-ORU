@@ -15,7 +15,7 @@ GET /users/vs
 - The UserModel.find() function is used to retrieve all documents from the UserModel collection in the database.
 - The retrieved users are then sent as a response using res.send(users).
 
-###Response
+### Response
 
 - Status: 200 OK
 - Description:This endpoint retrieves all users from the database.
