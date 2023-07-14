@@ -127,5 +127,31 @@ GET /users/top-cities
 
 
 
+# Frontend Documentation
+This documentation provides an overview of the frontend code and its functionalities.
 
+## User Table Component
+- The Usertable component displays a table of user data.
+- It receives the users prop, which contains an array of user objects.
+- The component implements pagination to display a specified number of users per page.
+- The table columns include First Name, Last Name, Email, Gender, Income, City, Car, Quote, Phone Price, and Average Income.
+
+## FilterButton Component
+- The FilterButton component represents a single filter button.
+- It receives the filterType prop, which specifies the type of filter to be applied.
+- Clicking the filter button triggers an API call to retrieve the filtered user data based on the specified filter type.
+- The filtered user data is passed back to the Home component and stored in the filteredUsers state.
+
+## Home Component
+- The Home component serves as the main component that renders the user table and filter buttons.
+- It maintains a state variable filteredUsers to store the filtered user data.
+- The component displays a title ("User Table") and filter buttons below it.
+- Filter buttons trigger API calls to retrieve filtered user data based on different filter types.
+- The filtered user data is passed to the Usertable component for rendering.
+
+## Axios Requests
+- The axios library is used to make HTTP requests to the backend API endpoints.
+
+## Styling
+- Inline styling is used to define the styles for different components and elements.
 
