@@ -12,8 +12,19 @@ This documentation provides information about the User API endpoints and their u
 ### Request
 GET /users/vs
 
-- The UserModel.find() function is used to retrieve all documents from the UserModel collection in the database.
-- The retrieved users are then sent as a response using res.send(users).
+
+- Returns an array of user objects with the following properties:
+
+  - id (Number): User ID
+  - first_name (String): First name of the user
+  - last_name (String): Last name of the user
+  - email (String): Email address of the user
+  - gender (String): Gender of the user
+  - income (String): Income of the user
+  - city (String): City of the user
+  - car (String): Car of the user
+  - quote (String): Quote of the user
+  - phone_price (String): Phone price of the user
 
 ### Response
 
