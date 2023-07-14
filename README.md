@@ -154,3 +154,8 @@ This documentation provides an overview of the frontend code and its functionali
 ## Styling
 - Inline styling is used to define the styles for different components and elements.
 
+
+https://github.com/Deeksha0301/Assignment-ORU/assets/92042650/587d3bb2-962f-4fa6-9c36-7158a6f5ee9b
+
+
+
